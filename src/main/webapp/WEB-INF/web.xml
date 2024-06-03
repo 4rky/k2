@@ -40,5 +40,13 @@
     <error-code>500</error-code>
     <location>/error500.jsp</location>
 </error-page>
-  
+<filter>
+    <filter-name>HeaderSicurezza</filter-name>
+    <filter-class>control.HeaderSicurezza</filter-class>
+</filter>
+
+<filter-mapping>
+    <filter-name>HeaderSicurezza</filter-name>
+    <url-pattern>/index.jsp</url-pattern>
+</filter-mapping>
 </web-app>
