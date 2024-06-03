@@ -101,37 +101,53 @@ USE GeekFactoryDB;
 
 /* accountuser data */
 INSERT INTO UserAccount (email, passwordUser, nome, cognome, indirizzo, telefono, numero, intestatario, CVV, ruolo)
-VALUES ('geekfactory@gmail.com', MD5('12345678'), 'Geek', 'Factory', 'Unisa, Dipartimento Informatica', '3476549862', '5436724598431234', 'GeekFactory', 476, 'admin');
+VALUES ('geekfactory@gmail.com', '6f387e7aefdc82e22f6d6e5b3d0d40fbf5d7662d54f0f8d03c1688a79f0e279d', 'Geek', 'Factory', 'Unisa, Dipartimento Informatica', '3476549862', '5436724598431234', 'GeekFactory', 476, 'admin');
+
 INSERT INTO UserAccount (email, passwordUser, nome, cognome, indirizzo, telefono, numero, intestatario, CVV)
-VALUES ('mariorossi@gmail.com', MD5('12345678'), 'Mario', 'Rossi', 'Caserta, Via Lazio 14', '3476549862', '5436724598431234', 'Mario Rossi', 476); 
+VALUES ('mariorossi@gmail.com', '6f387e7aefdc82e22f6d6e5b3d0d40fbf5d7662d54f0f8d03c1688a79f0e279d', 'Mario', 'Rossi', 'Caserta, Via Lazio 14', '3476549862', '5436724598431234', 'Mario Rossi', 476);
+
 INSERT INTO UserAccount (email, passwordUser, nome, cognome, indirizzo, telefono, numero, intestatario, CVV)
-VALUES ('luigiverdi@gmail.com', MD5('12345678'), 'Luigi', 'Verdi', 'Roma, Via Cesare 17', '3518457668', '6745982476311234', 'Luigi Verdi', 435); 
+VALUES ('luigiverdi@gmail.com', '6f387e7aefdc82e22f6d6e5b3d0d40fbf5d7662d54f0f8d03c1688a79f0e279d', 'Luigi', 'Verdi', 'Roma, Via Cesare 17', '3518457668', '6745982476311234', 'Luigi Verdi', 435);
+
 INSERT INTO UserAccount (email, passwordUser, nome, cognome, indirizzo, telefono, numero, intestatario, CVV)
-VALUES ('lorenzobianchi@gmail.com', MD5('12345678'), 'Lorenzo', 'Bianchi', 'Messina, Via Federico Fellini 14', '3474351776', '8791267534971234', 'Lorenzo Bianchi', 143); 
+VALUES ('lorenzobianchi@gmail.com', '6f387e7aefdc82e22f6d6e5b3d0d40fbf5d7662d54f0f8d03c1688a79f0e279d', 'Lorenzo', 'Bianchi', 'Messina, Via Federico Fellini 14', '3474351776', '8791267534971234', 'Lorenzo Bianchi', 143);
+
 INSERT INTO UserAccount (email, passwordUser, nome, cognome, indirizzo, telefono, numero, intestatario, CVV)
-VALUES ('gigiprossi@gmail.com', MD5('12345678'), 'Gigi Pio', 'Rossi', 'Caserta, Via Lazio 14', '3518234671', '7613872515281234', 'Gigi Pio Rossi', 621); 
+VALUES ('gigiprossi@gmail.com', '6f387e7aefdc82e22f6d6e5b3d0d40fbf5d7662d54f0f8d03c1688a79f0e279d', 'Gigi Pio', 'Rossi', 'Caserta, Via Lazio 14', '3518234671', '7613872515281234', 'Gigi Pio Rossi', 621);
+
 INSERT INTO UserAccount (email, passwordUser, nome, cognome, indirizzo, telefono, numero, intestatario, CVV)
-VALUES ('davidesari@yahoo.com', MD5('12345678'), 'Davide', 'Sari', 'Palermo, Via Libert√† 15', '3517628334', '8901034567391234', 'Davide Sari', 165); 
+VALUES ('davidesari@yahoo.com', '6f387e7aefdc82e22f6d6e5b3d0d40fbf5d7662d54f0f8d03c1688a79f0e279d', 'Davide', 'Sari', 'Palermo, Via Libert‡ 15', '3517628334', '8901034567391234', 'Davide Sari', 165);
+
 INSERT INTO UserAccount (email, passwordUser, nome, cognome, indirizzo, telefono, numero, intestatario, CVV)
-VALUES ('emildcarlo@libero.it', MD5('12345678'), 'Emiliano', 'De Carlo', 'Napoli, Via Superiore 24', '3479228888', '3241768501101234', 'Emiliano De Carlo', 823); 
+VALUES ('emildcarlo@libero.it', '6f387e7aefdc82e22f6d6e5b3d0d40fbf5d7662d54f0f8d03c1688a79f0e279d', 'Emiliano', 'De Carlo', 'Napoli, Via Superiore 24', '3479228888', '3241768501101234', 'Emiliano De Carlo', 823);
+
 INSERT INTO UserAccount (email, passwordUser, nome, cognome, indirizzo, telefono, numero, intestatario, CVV)
-VALUES ('saraverdi@gmail.com', MD5('12345678'), 'Sara', 'Verdi', 'Pisa, Via Miracoli 73', '3476629882', '6734891203451234', 'Sara Verdi', 820); 
+VALUES ('saraverdi@gmail.com', '6f387e7aefdc82e22f6d6e5b3d0d40fbf5d7662d54f0f8d03c1688a79f0e279d', 'Sara', 'Verdi', 'Pisa, Via Miracoli 73', '3476629882', '6734891203451234', 'Sara Verdi', 820);
+
 INSERT INTO UserAccount (email, passwordUser, nome, cognome, indirizzo, telefono, numero, intestatario, CVV)
-VALUES ('federeale@yahoo.com', MD5('12345678'), 'Federica', 'Reale', 'Salerno, Via Ponzi 1', '3471192332', '8923674123781234', 'Federica Reale', 732); 
+VALUES ('federeale@yahoo.com', '6f387e7aefdc82e22f6d6e5b3d0d40fbf5d7662d54f0f8d03c1688a79f0e279d', 'Federica', 'Reale', 'Salerno, Via Ponzi 1', '3471192332', '8923674123781234', 'Federica Reale', 732);
+
 INSERT INTO UserAccount (email, passwordUser, nome, cognome, indirizzo, telefono, numero, intestatario, CVV)
-VALUES ('cr7@gmail.com', MD5('4567812'), 'Cristiano', 'Ronaldo', 'Torino, Via Gemma 34', '3519938471', '7639071056291234', 'Cristiano Ronaldo', 623); 
+VALUES ('cr7@gmail.com', '3dcbab31d46ad96a997f85e8e08bc0ff02f07f83f833f5bc3dd31b6d9d923c50', 'Cristiano', 'Ronaldo', 'Torino, Via Gemma 34', '3519938471', '7639071056291234', 'Cristiano Ronaldo', 623);
+
 INSERT INTO UserAccount (email, passwordUser, nome, cognome, indirizzo, telefono, numero, intestatario, CVV)
-VALUES ('simonebianchi@yahoo.com', MD5('45678912'), 'Simone', 'Bianchi', 'Milano, Via Verit√† 83', '3479990110', '7823019820351234', 'Simone Bianchi', 999); 
+VALUES ('simonebianchi@yahoo.com', '6a4fe74a2d9dcb31cc5dd057ce2260f531a85749ebf1074c1b9b31ef98e3629c', 'Simone', 'Bianchi', 'Milano, Via Verit‡ 83', '3479990110', '7823019820351234', 'Simone Bianchi', 999);
+
 INSERT INTO UserAccount (email, passwordUser, nome, cognome, indirizzo, telefono, numero, intestatario, CVV)
-VALUES ('miriamesp@libero.it', MD5('45678912'), 'Miriam', 'Esposito', 'Napoli, Via Positano 56', '3479928998', '7153918202031234', 'Miriam Esposito', 102); 
+VALUES ('miriamesp@libero.it', 'a7d6e2c23e3b2fb22b8005b12e32a35b3d7aa41e7bf98118f6c022dc37c22d7a', 'Miriam', 'Esposito', 'Napoli, Via Positano 56', '3479928998', '7153918202031234', 'Miriam Esposito', 102);
+
 INSERT INTO UserAccount (email, passwordUser, nome, cognome, indirizzo, telefono, numero, intestatario, CVV)
-VALUES ('michver@yahoo.com', MD5('45678912'), 'Michele', 'Verdi', 'Pavia, Via Roma 11', '3519923000', '6172918291541234', 'Michele Verdi', 629); 
+VALUES ('michver@yahoo.com', 'db3747a39d7867b168f92d3d9a5374e40f1a10f476de2773c504fad0eb3b8d17', 'Michele', 'Verdi', 'Pavia, Via Roma 11', '3519923000', '6172918291541234', 'Michele Verdi', 629);
+
 INSERT INTO UserAccount (email, passwordUser, nome, cognome, indirizzo, telefono, numero, intestatario, CVV)
-VALUES ('dantealig@gmail.com', MD5('45678912'), 'Dante', 'Alighieri', 'Firenze, Via Santa Margherita 1', '3518823999', '8178291004211234', 'Dante Alighieri', 555); 
+VALUES ('dantealig@gmail.com', 'b3435b13f99cf6ea2a3679c7a1e3a10b5b1e94e3e6ce2c93e9b000eb6c4d8c2b', 'Dante', 'Alighieri', 'Firenze, Via Santa Margherita 1', '3518823999', '8178291004211234', 'Dante Alighieri', 555);
+
 INSERT INTO UserAccount (email, passwordUser, nome, cognome, indirizzo, telefono, numero, intestatario, CVV)
-VALUES ('alemanzoni@gmail.com', MD5('45678912'), 'Alessandro', 'Manzoni', 'Milano, Via Gerolamo Morone 1', '3512579112', '7182192004621234', 'Alessandro Manzoni', 172); 
+VALUES ('alemanzoni@gmail.com', 'be8f81bc7870ab4c0863e5e2a866b3e8dd5c30f1b5935cc8286ebf9602ec0217', 'Alessandro', 'Manzoni', 'Milano, Via Gerolamo Morone 1', '3512579112', '7182192004621234', 'Alessandro Manzoni', 172);
+
 INSERT INTO UserAccount (email, passwordUser, nome, cognome, indirizzo, telefono, numero, intestatario, CVV)
-VALUES ('pessimismocosmico@libero.it', MD5('45678912'), 'Giacomo', 'Leopardi', 'Recanati, Via Leopardi 14', '3519928000', '1672819100321234', 'Giacomo Leopardi', 671);
+VALUES ('pessimismocosmico@libero.it', '0f9f1871040c19b75c812e6f3f62276f2d5f4bda4e3e61656b4558bf362283a4', 'Giacomo', 'Leopardi', 'Recanati, Via Leopardi 14', '3519928000', '1672819100321234', 'Giacomo Leopardi', 671);
+
 
 /* cliente data */
 INSERT INTO Cliente (email) VALUES ('geekfactory@gmail.com');

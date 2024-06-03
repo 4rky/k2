@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
@@ -18,6 +17,7 @@ import model.DriverManagerConnectionPool;
 import model.OrderModel;
 import model.UserBean;
 
+import java.security.NoSuchAlgorithmException;
 /**
  * Servlet implementation class Login
  */
@@ -98,19 +98,24 @@ public class Login extends HttpServlet {
 		response.sendRedirect(request.getContextPath() + redirectedPage);
 	}
 		
-	private String checkPsw(String psw) {
-		MessageDigest md = null;
-		try {
-			md = MessageDigest.getInstance("MD5");
-		}
-		catch (Exception e) {
-			e.printStackTrace();
-		}
-		byte[] messageDigest = md.digest(psw.getBytes());
-		BigInteger number = new BigInteger(1, messageDigest);
-		String hashtext = number.toString(16);
-		
-		return hashtext;
-	}
+    private String checkPsw(String psw) {
+        MessageDigest md = null;
+        try {
+            md = MessageDigest.getInstance("SHA-256"); // Usa SHA-256 invece di MD5
+        }
+        catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+        byte[] messageDigest = md.digest(psw.getBytes());
+        BigInteger number = new BigInteger(1, messageDigest);
+        String hashtext = number.toString(16);
+        
+        // Padding leading zeros to make it 64 character (since SHA-256 produces 256-bit hashes)
+        while (hashtext.length() < 64) {
+            hashtext = "0" + hashtext;
+        }
+        
+        return hashtext;
+    }
 
 }
